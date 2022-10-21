@@ -31,8 +31,21 @@ public class Main {
 //        int result = b % a;
 //        System.out.println(result);
 
-        int a = 10;
-        int b = a++;
+        int a = 5;
+        int b = 5;
+        int result = a++ - --b + b-- + a-- - a++ + b++ - b--;
+        // 5 - --b + b-- + a-- - a++ + b++ - b--; a = 6, b = 5
+        // 5 - 4 + b-- + a-- - a++ + b++ - b--; a = 6, b = 4
+        // 5 - 4 + 4 + a-- - a++ + b++ - b--; a = 6, b = 3
+        // 5 - 4 + 4 + 6 - a++ + b++ - b--; a = 5, b = 3
+        // 5 - 4 + 4 + 6 - 5 + b++ - b--; a = 6, b = 3
+        // 5 - 4 + 4 + 6 - 5 + 3 - b--; a = 6, b = 4
+        // 5 - 4 + 4 + 6 - 5 + 3 - 4; a = 6, b = 3
+
+        // a = 6, b = 3, result = 5
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(result);
 
         // Toán tử ++
         // Th1: a++
@@ -41,8 +54,8 @@ public class Main {
         // Th2: ++a
         // 1: Tăng a lên 1 đơn vị
         // 2: Gán giá trị vào cho a
-        System.out.println(b);
-        System.out.println(a);
+
+
     }
 }
 
