@@ -68,6 +68,30 @@ public class Main {
 //        } else {
 //            System.out.println("Là năm không nhuận");
 //        }
+
+        // Tính chỉ số bmi và đưa ra kết luận cơ thể
+        // Công thức bmi = cân nặng (kg) / chiều cao (m) * chiều cao (m)
+
+        float weight = 75f;
+        float height = 1.75f;
+        float bmi = weight / (height * height);
+
+        String message = "";
+        if (bmi < 18.5) {
+            message = "Phân loại: Gầy";
+        } else if (bmi <= 24.9) {
+            message = "Phân loại: Bình thường";
+        } else if (bmi <= 29.9) {
+            message = "Phân loại: Hơi béo";
+        } else if (bmi <= 34.9) {
+            message = "Phân loại: Béo cấp 1";
+        } else if (bmi <= 39.9) {
+            message = "Phân loại: Béo cấp 2";
+        } else {
+            message = "Phân loại: Béo cấp 3";
+        }
+        System.out.println("Chỉ số bmi của bạn: " + bmi);
+        System.out.println(message);
     }
 }
 
