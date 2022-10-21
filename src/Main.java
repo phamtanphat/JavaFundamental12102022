@@ -31,31 +31,43 @@ public class Main {
 //        int result = b % a;
 //        System.out.println(result);
 
-        int a = 5;
-        int b = 5;
-        int result = a++ - --b + b-- + a-- - a++ + b++ - b--;
-        // 5 - --b + b-- + a-- - a++ + b++ - b--; a = 6, b = 5
-        // 5 - 4 + b-- + a-- - a++ + b++ - b--; a = 6, b = 4
-        // 5 - 4 + 4 + a-- - a++ + b++ - b--; a = 6, b = 3
-        // 5 - 4 + 4 + 6 - a++ + b++ - b--; a = 5, b = 3
-        // 5 - 4 + 4 + 6 - 5 + b++ - b--; a = 6, b = 3
-        // 5 - 4 + 4 + 6 - 5 + 3 - b--; a = 6, b = 4
-        // 5 - 4 + 4 + 6 - 5 + 3 - 4; a = 6, b = 3
+//        int a = 5;
+//        int b = 5;
+//        int result = a++ - --b + b-- + a-- - a++ + b++ - b--;
+//         5 - --b + b-- + a-- - a++ + b++ - b--; a = 6, b = 5
+//         5 - 4 + b-- + a-- - a++ + b++ - b--; a = 6, b = 4
+//         5 - 4 + 4 + a-- - a++ + b++ - b--; a = 6, b = 3
+//         5 - 4 + 4 + 6 - a++ + b++ - b--; a = 5, b = 3
+//         5 - 4 + 4 + 6 - 5 + b++ - b--; a = 6, b = 3
+//         5 - 4 + 4 + 6 - 5 + 3 - b--; a = 6, b = 4
+//         5 - 4 + 4 + 6 - 5 + 3 - 4; a = 6, b = 3
 
-        // a = 6, b = 3, result = 5
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(result);
+//         a = 6, b = 3, result = 5
+//        System.out.println(a);
+//        System.out.println(b);
+//        System.out.println(result);
 
-        // Toán tử ++
-        // Th1: a++
-        // 1: Gán giá trị vào cho a
-        // 2: Tăng a lên 1 đơn vị
-        // Th2: ++a
-        // 1: Tăng a lên 1 đơn vị
-        // 2: Gán giá trị vào cho a
+//         Toán tử ++
+//         Th1: a++
+//         1: Gán giá trị vào cho a
+//         2: Tăng a lên 1 đơn vị
+//         Th2: ++a
+//         1: Tăng a lên 1 đơn vị
+//         2: Gán giá trị vào cho a
 
 
+//        4: Câu điều kiện if
+
+//        int year = 392;
+//
+//         Tính xem năm trên có phải là năm nhuần hay không
+//         Xuất ra thông báo
+
+//        if ((year % 4 == 0 || year % 400 == 0) && year % 100 != 0) {
+//            System.out.println("Là năm nhuận");
+//        } else {
+//            System.out.println("Là năm không nhuận");
+//        }
     }
 }
 
