@@ -105,6 +105,8 @@ public class Main {
 //            case 2:
 //                System.out.println("Quý 2");
 //                break;
+//            default:
+//                System.out.println("Không rơi vào trường hợp trên");
 //        }
     }
 }
