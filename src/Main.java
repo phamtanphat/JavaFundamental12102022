@@ -111,8 +111,37 @@ public class Main {
 
 //        6: Vòng lặp for -> Duyệt dữ liệu để xử lý
 
-        for(int i = 0; i < 10; i++) {
-            System.out.println(i);
+//        for(int i = 0; i < 10; i++) {
+//            System.out.println(i);
+//        }
+
+        // Cho vòng lặp chạy từ 1 -> 100
+        // Chỉ in ra số chẳn
+//        for (int i = 1; i <= 100; i++) {
+//            if (i % 2 == 0) {
+//                System.out.println(i);
+//            }
+//        }
+
+        // Cho vòng lặp chạy từ 100 -> 1
+        // In ra số chia hết cho 3
+
+        // Cho 1 số ngẫu nhiên
+        // Kiểm số đó có phải số nguyên tố hay không
+
+        int number = 10512;
+
+        if (number < 2) {
+            System.out.println("Không phải là số nguyên tố");
+        } else {
+            for (int i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    System.out.println("Không phải là số nguyên tố");
+                    return;
+                }
+            }
+
+            System.out.println("Số " + number + " là số nguyên tố");
         }
     }
 }
