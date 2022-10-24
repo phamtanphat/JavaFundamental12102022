@@ -129,19 +129,28 @@ public class Main {
         // Cho 1 số ngẫu nhiên
         // Kiểm số đó có phải số nguyên tố hay không
 
-        int number = 10512;
+//        int number = 10512;
+//
+//        if (number < 2) {
+//            System.out.println("Không phải là số nguyên tố");
+//        } else {
+//            for (int i = 2; i < number; i++) {
+//                if (number % i == 0) {
+//                    System.out.println("Không phải là số nguyên tố");
+//                    return;
+//                }
+//            }
+//
+//            System.out.println("Số " + number + " là số nguyên tố");
+//        }
 
-        if (number < 2) {
-            System.out.println("Không phải là số nguyên tố");
-        } else {
-            for (int i = 2; i < number; i++) {
-                if (number % i == 0) {
-                    System.out.println("Không phải là số nguyên tố");
-                    return;
-                }
-            }
+//        7: Vòng lặp while
 
-            System.out.println("Số " + number + " là số nguyên tố");
+        long numberRandom = Math.round((Math.random() * 100) + 1);
+
+        while (numberRandom >= 1) {
+            System.out.println(numberRandom);
+            numberRandom--;
         }
     }
 }
