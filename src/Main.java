@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 //         Câu lệnh in ra hệ thống
@@ -145,13 +147,22 @@ public class Main {
 //        }
 
 //        7: Vòng lặp while
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Mời bạn nhập năm sinh: ");
+        int year = scanner.nextInt();
 
-        long numberRandom = Math.round((Math.random() * 100) + 1);
+        do {
+            if (year > 0){
+                System.out.println("Bạn " + (2022 - year) + " tuổi");
+            } else {
+                System.out.println("Mời bạn nhâp lại: ");
+                year = scanner.nextInt();
+                if (year > 0) {
+                    System.out.println("Bạn " + (2022 - year) + " tuổi");
+                }
+            }
+        }while (year <= 0);
 
-        while (numberRandom >= 1) {
-            System.out.println(numberRandom);
-            numberRandom--;
-        }
     }
 }
 
