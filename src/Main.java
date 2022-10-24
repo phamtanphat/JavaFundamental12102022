@@ -108,6 +108,12 @@ public class Main {
 //            default:
 //                System.out.println("Không rơi vào trường hợp trên");
 //        }
+
+//        6: Vòng lặp for -> Duyệt dữ liệu để xử lý
+
+        for(int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
     }
 }
 
