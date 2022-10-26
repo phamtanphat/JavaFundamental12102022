@@ -147,22 +147,36 @@ public class Main {
 //        }
 
 //        7: Vòng lặp while
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Mời bạn nhập năm sinh: ");
-        int year = scanner.nextInt();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Mời bạn nhập năm sinh: ");
+//        int year = scanner.nextInt();
+//
+//        do {
+//            if (year > 0){
+//                System.out.println("Bạn " + (2022 - year) + " tuổi");
+//            } else {
+//                System.out.println("Mời bạn nhâp lại: ");
+//                year = scanner.nextInt();
+//                if (year > 0) {
+//                    System.out.println("Bạn " + (2022 - year) + " tuổi");
+//                }
+//            }
+//        }while (year <= 0);
 
-        do {
-            if (year > 0){
-                System.out.println("Bạn " + (2022 - year) + " tuổi");
-            } else {
-                System.out.println("Mời bạn nhâp lại: ");
-                year = scanner.nextInt();
-                if (year > 0) {
-                    System.out.println("Bạn " + (2022 - year) + " tuổi");
-                }
-            }
-        }while (year <= 0);
+        // Object va class
 
+        Animal meo = new Animal();
+        meo.name = "Milu";
+        meo.height = "0.1m";
+        meo.weight = "2kg";
+
+        Animal meo1 = new Animal();
+        meo1.name = "Aka";
+        meo1.height = "0.12m";
+        meo1.weight = "3kg";
+
+        System.out.println(meo);
+        System.out.println(meo1);
     }
 }
 
