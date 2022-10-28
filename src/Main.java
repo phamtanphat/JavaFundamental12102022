@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -165,18 +164,17 @@ public class Main {
 
         // Object va class
 
-        Animal meo = new Animal();
-        meo.name = "Milu";
-        meo.height = "0.1m";
-        meo.weight = "2kg";
+        Animal meo = new Animal("Milu", "0.1m", "2kg");
+        Animal meo1 = new Animal("Aka", "0.12m", "3kg");
 
-        Animal meo1 = new Animal();
-        meo1.name = "Aka";
-        meo1.height = "0.12m";
-        meo1.weight = "3kg";
+        Cat cat = new Cat("Kity", "0.13m", "1.5kg", "gray");
+        cat.showInfo();
+        // Access modifier (Phạm vi truy cập)
+        // Tính đóng gói
+        // Tính kế thừa
+        // Tính đa hình
+        // Tính trườu tượng
 
-        System.out.println(meo);
-        System.out.println(meo1);
     }
 }
 
