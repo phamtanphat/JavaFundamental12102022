@@ -175,6 +175,9 @@ public class Main {
         // Tính đa hình
         // Tính trườu tượng
 
+        PizzaStore pizzaStore = new PizzaStore();
+        pizzaStore.orderPizza(new PizzaCheese());
+
     }
 }
 

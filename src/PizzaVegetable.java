@@ -6,7 +6,7 @@ public class PizzaVegetable extends Pizza{
 
     @Override
     public void sauce() {
-        System.out.println("Pizza Vegetable Prepare");
+        System.out.println("Pizza Vegetable Sauce");
     }
 
     @Override
